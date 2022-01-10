@@ -1,0 +1,199 @@
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ git clone https://github.com/ebourelly/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Total 40 (delta 0), reused 0 (delta 0), pack-reused 40
+Receiving objects: 100% (40/40), 10.91 KiB | 1.56 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ cd lab-bash/
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ echo Hello World
+Hello World
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ mkdir new_dir
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ rmdir new_dir
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash/lorem (master)
+$ cp sed.txt lorem-copy
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash/lorem (master)
+$ cd lorem-copy
+bash: cd: lorem-copy: Not a directory
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash/lorem (master)
+$ cd
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ cd lab-bash
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cp lorem/sed.txt lorem-copy
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ ls
+dummy_file.txt  sed.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~
+$ cd lab-bash
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cp lorem/{at.txt,lorem.txt} lorem-copy
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cat lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cat lorem/lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ head -n 3lorem-copy/sed.txt
+head: invalid number of lines: ‘3lorem-copy/sed.txt’
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ head -n 3 lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ tail -n 3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ echo 'Homo homini lupus' >> lorem-copy/sed.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ tail -n 3 lorem-copy/sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ sed -r -i 's/et/ET/g' lorem/at.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cat lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ git config user.name
+ebourelly
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ pwd
+/c/Users/ebour/lab-bash
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash/lorem (master)
+$ git ls-files '*.txt'
+at.txt
+lorem.txt
+sed.txt
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ cat lorem/sed.txt | wc -l
+9
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ ls -R | grep lorem*.txt | wc -l
+2
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ myname="$(git config user.name)"
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ echo $myname
+ebourelly
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ mkdir $myname
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ ls
+ebourelly/  exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ rmdir ebourelly
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+ebour@LAPTOP-3V3S5PD8 MINGW64 ~/lab-bash (master)
+$
